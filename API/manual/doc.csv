@@ -1,0 +1,65 @@
+    client-server architecture
+
+web application is 3 tier application
+1. we have the client application
+2. application server[business logic]
+3. database server
+
+API is a way of communicating betweeen to application
+
+Two types of API
+SOAP - old technology , supports on XML
+REST - support JSON,XML, html 
+
+
+API in the net = Web service
+NB - webservices are API but API are not web service
+
+types of http HTTP request method 
+GET - retrieves data from a database/server
+POST - to create data to the database/server
+PUT - to do largely Update data ....
+PATCH - To  slightly Update data 
+DELETE - To delete data in the database
+
+WHAT TO KNOW BEFORE TESTING THE API
+
+1.You have to know the functionality of the API,what it does
+2. The request
+3. The response
+4.the content of the response 
+5. the status code
+
+WHAT IS IS HTTP
+
+Summarily - a communication protocol betweeen client and server
+HTTP stands for Hypertext Transfer Protocol. It is a protocol for transmitting hypermedia documents,
+such as HTML, between web browsers and web servers1. HTTP has different versions, such as HTTP/1.1, HTTP/2 and HTTP/3, which have different features and performance
+ 
+ some def .
+URI - Uniform resource idenfier same as URL
+URL - Uniform resource locator e.g https://www.google.com/articles/articlename
+URN - Uniform resource name    e.g articlename
+ENDPOINT - articles/articlename
+host - e.g https://www.google.com/
+
+N.B resource is something available in the server which we can requested. it 
+    synonymous to a feature(for manual testing)
+Payload - data we are sending in the request or data in the response
+
+Collections contains folders and http request
+
+On the point , what follows after question mark is called query parameter e.g 
+"/payment-report?filter={"prlCreatedAt_start": "2023-01-21 00:00:00","prlCreatedAt_end": "2023-04-21 23:59:59"}"
+
+path parameter e.g 91c5f2da-ca9c-455f-be2e-50784051b4d7/pay
+
+Levels of status code 
+
+200
+
+400
+
+500
+
+API/manual/status.png
