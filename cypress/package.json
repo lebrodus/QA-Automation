@@ -1,16 +1,17 @@
 {
-  "name": "cypress",
+  "name": "qa-automation-cypress",
   "version": "1.0.0",
-  "description": "",
+  "description": "Cypress UI and API test automation - POM, fixtures, custom commands, Cucumber/BDD and network mocking.",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/.bin/cypress run",
-    "headmode": "npm run test -- --headed",
-    "chrome": "npm run test -- --browser chrome",
-    "dashboard": "npm run test -- --record --key ***REMOVED*** --reporter mochawesome"
+    "cypress:open": "cypress open",
+    "test": "cypress run",
+    "test:headed": "npm run test -- --headed",
+    "test:chrome": "npm run test -- --browser chrome",
+    "test:record": "npm run test -- --record --reporter mochawesome"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Lewis Babe Yaka",
+  "license": "MIT",
   "devDependencies": {
     "cypress": "^12.8.1",
     "cypress-iframe": "^1.0.1"
